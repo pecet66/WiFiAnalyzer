@@ -24,6 +24,7 @@
     android:orientation="horizontal"
     android:paddingTop="@dimen/list_view_item_horizontal_spacer">
 
+<!--
     <RatingBar
         android:id="@+id/channelRating"
         style="?android:attr/ratingBarStyleSmall"
@@ -33,6 +34,7 @@
         android:layout_marginRight="@dimen/list_view_item_horizontal_spacer"
         android:layout_weight="1"
         android:stepSize="1.0"/>
+-->
 
     <TextView
         android:id="@+id/channelNumber"

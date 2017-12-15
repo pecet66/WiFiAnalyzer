@@ -111,17 +111,17 @@ class ChannelRatingAdapter extends ArrayAdapter<WiFiChannel> implements UpdateNo
         ((TextView) view.findViewById(R.id.accessPointCount))
             .setText(String.format(Locale.ENGLISH, "%d", channelRating.getCount(wiFiChannel)));
         Strength strength = Strength.reverse(channelRating.getStrength(wiFiChannel));
-        RatingBar ratingBar = view.findViewById(R.id.channelRating);
-        int size = Strength.values().length;
-        ratingBar.setMax(size);
-        ratingBar.setNumStars(size);
-        ratingBar.setRating(strength.ordinal() + 1);
-        int color = ContextCompat.getColor(getContext(), strength.colorResource());
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
-            setRatingBarColor(ratingBar.getProgressDrawable(), color);
-        } else {
-            ratingBar.setProgressTintList(ColorStateList.valueOf(color));
-        }
+        //RatingBar ratingBar = view.findViewById(R.id.channelRating);
+        //int size = Strength.values().length;
+        //ratingBar.setMax(size);
+        //ratingBar.setNumStars(size);
+        //ratingBar.setRating(strength.ordinal() + 1);
+        //int color = ContextCompat.getColor(getContext(), strength.colorResource());
+        //if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+        //    setRatingBarColor(ratingBar.getProgressDrawable(), color);
+        //} else {
+        //    ratingBar.setProgressTintList(ColorStateList.valueOf(color));
+        //}
 
         return view;
     }
