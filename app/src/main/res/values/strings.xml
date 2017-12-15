@@ -60,7 +60,7 @@
     <string name="channel_rating_heading_rating">Ocena kanału:</string>
     <string name="channel_rating_heading_number">Numer kanału:</string>
     <string name="channel_rating_heading_count">Ilość nadajników:</string>
-    <string name="channel_short_name">CH</string>
+    <string name="channel_short_name">Kanał:</string>
 
     <string name="graph_channel_axis_x">WiFi Channels</string>
     <string name="graph_time_axis_x">Scan Count</string>

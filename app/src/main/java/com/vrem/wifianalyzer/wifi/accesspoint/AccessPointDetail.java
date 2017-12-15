@@ -99,7 +99,8 @@ public class AccessPointDetail {
             .setText(String.format(Locale.ENGLISH, "%5.1fm", wiFiSignal.getDistance()));
 
         if (isChild) {
-            view.findViewById(R.id.tab).setVisibility(View.VISIBLE);
+            //view.findViewById(R.id.tab).setVisibility(View.VISIBLE);
+            view.findViewById(R.id.tab).setVisibility(View.GONE);
         } else {
             view.findViewById(R.id.tab).setVisibility(View.GONE);
         }
