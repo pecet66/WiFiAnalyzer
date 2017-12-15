@@ -61,7 +61,7 @@ public class ConnectionView implements UpdateNotifier {
     }
 
     private void setNoDataVisibility(@NonNull WiFiData wiFiData) {
-        mainActivity.findViewById(R.id.nodata).setVisibility(isDataAvailable(wiFiData) ? View.GONE : View.VISIBLE);
+        //mainActivity.findViewById(R.id.nodata).setVisibility(isDataAvailable(wiFiData) ? View.GONE : View.VISIBLE);
     }
 
     private boolean isDataAvailable(@NonNull WiFiData wiFiData) {
@@ -69,7 +69,7 @@ public class ConnectionView implements UpdateNotifier {
     }
 
     private void setConnectionVisibility(@NonNull WiFiData wiFiData, @NonNull ConnectionViewType connectionViewType) {
-        WiFiDetail connection = wiFiData.getConnection();
+        /*WiFiDetail connection = wiFiData.getConnection();
         View connectionView = mainActivity.findViewById(R.id.connection);
         WiFiConnection wiFiConnection = connection.getWiFiAdditional().getWiFiConnection();
         if (connectionViewType.isHide() || !wiFiConnection.isConnected()) {
@@ -83,7 +83,7 @@ public class ConnectionView implements UpdateNotifier {
             }
             setViewConnection(connectionView, wiFiConnection);
             attachPopup(view, connection);
-        }
+        }*/
     }
 
     private void setViewConnection(View connectionView, WiFiConnection wiFiConnection) {

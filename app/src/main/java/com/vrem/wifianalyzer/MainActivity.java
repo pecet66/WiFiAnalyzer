@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
     private MainReload mainReload;
     private NavigationMenuView navigationMenuView;
     private NavigationMenu startNavigationMenu;
-    private OptionMenu optionMenu;
+    //private OptionMenu optionMenu;
     private String currentCountryCode;
 
     @Override
@@ -83,10 +83,10 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
 
         settings.registerOnSharedPreferenceChangeListener(this);
 
-        setOptionMenu(new OptionMenu());
+        //setOptionMenu(new OptionMenu());
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setOnClickListener(new WiFiBandToggle());
+        //toolbar.setOnClickListener(new WiFiBandToggle());
         setSupportActionBar(toolbar);
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -179,7 +179,7 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
 
     @Override
     protected void onPause() {
-        optionMenu.pause();
+        //optionMenu.pause();
         updateActionBar();
         super.onPause();
     }
@@ -187,7 +187,7 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
     @Override
     protected void onResume() {
         super.onResume();
-        optionMenu.resume();
+        //optionMenu.resume();
         updateActionBar();
     }
 
@@ -199,14 +199,14 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        optionMenu.create(this, menu);
+        //optionMenu.create(this, menu);
         updateActionBar();
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        optionMenu.select(item);
+        //optionMenu.select(item);
         updateActionBar();
         return true;
     }
@@ -219,21 +219,21 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
         return navigationMenuView;
     }
 
-    public OptionMenu getOptionMenu() {
+    /*public OptionMenu getOptionMenu() {
         return optionMenu;
-    }
+    }*/
 
-    void setOptionMenu(@NonNull OptionMenu optionMenu) {
+    /*void setOptionMenu(@NonNull OptionMenu optionMenu) {
         this.optionMenu = optionMenu;
-    }
+    }*/
 
-    private class WiFiBandToggle implements OnClickListener {
+    /*private class WiFiBandToggle implements OnClickListener {
         @Override
         public void onClick(View view) {
             if (navigationMenuView.getCurrentNavigationMenu().isWiFiBandSwitchable()) {
                 MainContext.INSTANCE.getSettings().toggleWiFiBand();
             }
         }
-    }
+    }*/
 
 }

@@ -28,9 +28,9 @@ class FilterOff implements NavigationOption {
 
     @Override
     public void apply(@NonNull MainActivity mainActivity) {
-        Menu menu = mainActivity.getOptionMenu().getMenu();
-        if (menu != null) {
-            menu.findItem(R.id.action_filter).setVisible(false);
-        }
+        //Menu menu = mainActivity.getOptionMenu().getMenu();
+        //if (menu != null) {
+        //    menu.findItem(R.id.action_filter).setVisible(false);
+        //}
     }
 }

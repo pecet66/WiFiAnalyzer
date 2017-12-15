@@ -33,7 +33,9 @@
 
         <include layout="@layout/main_toolbar"/>
 
+<!--
         <include layout="@layout/main_connection"/>
+-->
 
         <LinearLayout
             android:id="@+id/main_fragment_layout"

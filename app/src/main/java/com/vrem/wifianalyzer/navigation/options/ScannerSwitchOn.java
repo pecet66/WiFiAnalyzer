@@ -30,7 +30,7 @@ class ScannerSwitchOn implements NavigationOption {
 
     @Override
     public void apply(@NonNull MainActivity mainActivity) {
-        Menu menu = mainActivity.getOptionMenu().getMenu();
+        /*Menu menu = mainActivity.getOptionMenu().getMenu();
         if (menu != null) {
             MenuItem menuItem = menu.findItem(R.id.action_scanner);
             menuItem.setVisible(true);
@@ -41,7 +41,7 @@ class ScannerSwitchOn implements NavigationOption {
                 menuItem.setTitle(R.string.action_resume);
                 menuItem.setIcon(R.drawable.ic_play_arrow_grey_500_48dp);
             }
-        }
+        }*/
     }
 
 }

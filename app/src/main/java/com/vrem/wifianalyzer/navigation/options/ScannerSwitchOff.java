@@ -28,9 +28,9 @@ class ScannerSwitchOff implements NavigationOption {
 
     @Override
     public void apply(@NonNull MainActivity mainActivity) {
-        Menu menu = mainActivity.getOptionMenu().getMenu();
+        /*Menu menu = mainActivity.getOptionMenu().getMenu();
         if (menu != null) {
             menu.findItem(R.id.action_scanner).setVisible(false);
-        }
+        }*/
     }
 }
