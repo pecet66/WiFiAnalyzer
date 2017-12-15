@@ -98,25 +98,29 @@ public class AccessPointDetail {
         ((TextView) view.findViewById(R.id.distance))
             .setText(String.format(Locale.ENGLISH, "%5.1fm", wiFiSignal.getDistance()));
 
+/*
         if (isChild) {
-            //view.findViewById(R.id.tab).setVisibility(View.VISIBLE);
+            view.findViewById(R.id.tab).setVisibility(View.VISIBLE);
             view.findViewById(R.id.tab).setVisibility(View.GONE);
         } else {
             view.findViewById(R.id.tab).setVisibility(View.GONE);
         }
+*/
     }
 
     private void setViewExtra(@NonNull View view, @NonNull WiFiDetail wiFiDetail) {
         Context context = view.getContext();
 
-        ImageView configuredImage = view.findViewById(R.id.configuredImage);
+        //ImageView configuredImage = view.findViewById(R.id.configuredImage);
         WiFiAdditional wiFiAdditional = wiFiDetail.getWiFiAdditional();
+/*
         if (wiFiAdditional.isConfiguredNetwork()) {
             configuredImage.setVisibility(View.VISIBLE);
             configuredImage.setColorFilter(ContextCompat.getColor(context, R.color.connected));
         } else {
             configuredImage.setVisibility(View.GONE);
         }
+*/
 
         WiFiSignal wiFiSignal = wiFiDetail.getWiFiSignal();
         Strength strength = wiFiSignal.getStrength();
@@ -133,14 +137,14 @@ public class AccessPointDetail {
     }
 
     private void setViewVendorShort(@NonNull View view, @NonNull WiFiAdditional wiFiAdditional) {
-        TextView textVendorShort = view.findViewById(R.id.vendorShort);
+        /*TextView textVendorShort = view.findViewById(R.id.vendorShort);
         String vendor = wiFiAdditional.getVendorName();
         if (StringUtils.isBlank(vendor)) {
             textVendorShort.setVisibility(View.GONE);
         } else {
             textVendorShort.setVisibility(View.VISIBLE);
             textVendorShort.setText(vendor.substring(0, Math.min(VENDOR_SHORT_MAX, vendor.length())));
-        }
+        }*/
     }
 
     private void setViewVendorLong(@NonNull View view, @NonNull WiFiAdditional wiFiAdditional) {

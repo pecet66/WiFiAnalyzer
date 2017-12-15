@@ -20,7 +20,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="220dp"
+    android:layout_height="190dp"
     android:orientation="horizontal">
 
     <ImageView
@@ -49,8 +49,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="22sp"
-        tools:layout_editor_absoluteX="291dp"
-        tools:layout_editor_absoluteY="170dp"
+        tools:layout_editor_absoluteX="283dp"
+        tools:layout_editor_absoluteY="81dp"
         tools:text="-64dBm" />
 
     <ImageView
@@ -59,8 +59,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:contentDescription="@null"
-        tools:layout_editor_absoluteX="271dp"
-        tools:layout_editor_absoluteY="54dp"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="41dp"
         tools:layout_height="40dp"
         tools:layout_width="40dp" />
 
@@ -76,7 +76,7 @@
         tools:layout_conversion_absoluteHeight="22dp"
         tools:layout_conversion_absoluteWidth="45dp"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="79dp" />
+        tools:layout_editor_absoluteY="72dp" />
 
     <TextView
         android:id="@+id/channel"
@@ -88,8 +88,8 @@
         android:textStyle="bold"
         tools:layout_conversion_absoluteHeight="22dp"
         tools:layout_conversion_absoluteWidth="65dp"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="79dp"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="72dp"
         tools:text="100(106)" />
 
     <TextView
@@ -102,7 +102,7 @@
         tools:layout_conversion_absoluteHeight="22dp"
         tools:layout_conversion_absoluteWidth="70dp"
         tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="80dp"
+        tools:layout_editor_absoluteY="72dp"
         tools:text="5500MHz" />
 
     <TextView
@@ -116,17 +116,17 @@
         tools:layout_conversion_absoluteHeight="22dp"
         tools:layout_conversion_absoluteWidth="37dp"
         tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="170dp"
+        tools:layout_editor_absoluteY="152dp"
         tools:text="7.7m" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Odległość: "
         android:textSize="22sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="170dp"
-        tools:text="Odległość: " />
+        tools:layout_editor_absoluteY="152dp" />
 
     <TextView
         android:id="@+id/channel_frequency_range"
@@ -136,7 +136,7 @@
         android:textColor="@color/frequency"
         android:textSize="16sp"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="47dp"
+        tools:layout_editor_absoluteY="41dp"
         tools:text="2402-2422MHz" />
 
     <TextView
@@ -146,8 +146,8 @@
         android:layout_height="wrap_content"
         android:textColor="@color/frequency"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="47dp"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="41dp"
         tools:text="(20 MHz)" />
 
     <ImageView
@@ -155,6 +155,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@null"
+        android:visibility="gone"
         tools:layout_editor_absoluteX="340dp"
         tools:layout_editor_absoluteY="113dp"
         tools:layout_height="20dp"
@@ -162,14 +163,14 @@
 
     <TextView
         android:id="@+id/capabilities"
-        android:layout_width="320dp"
+        android:layout_width="257dp"
         android:layout_height="wrap_content"
         android:textColor="@color/security"
         android:textSize="16sp"
         android:textStyle="italic"
 
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="113dp"
+        tools:layout_editor_absoluteY="103dp"
         tools:text="[WPA][WPA][WPA][WPA][WPA][WPA][WPA][WPA][WPA][WPA]" />
 
 </android.support.constraint.ConstraintLayout>
