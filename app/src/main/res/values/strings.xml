@@ -54,7 +54,7 @@
 
     <string name="export_not_available">Export not available</string>
 
-    <string name="channel_rating_best">Najlepsze Kanały:</string>
+    <string name="channel_rating_best">Najlepsze kanały:</string>
     <string name="channel_rating_best_none">None</string>
     <string name="channel_rating_best_alternative">, try alternative WiFi Band</string>
     <string name="channel_rating_heading_rating">Ocena kanału:</string>
