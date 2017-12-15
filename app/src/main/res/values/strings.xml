@@ -19,7 +19,7 @@
 
 <resources>
     <!-- application start -->
-    <string name="app_name" translatable="false">WiFiAnalyzer</string>
+    <string name="app_name" translatable="false">ISK Scanner</string>
     <string name="app_company_name" translatable="false">VREM Software Development</string>
     <string name="app_copyright">Copyright \u00A9 2015 \u002D 2017</string>
     <string name="app_url" translatable="false">https://vremsoftwaredevelopment.github.io/WiFiAnalyzer</string>
@@ -29,8 +29,8 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <!-- action start -->
-    <string name="action_access_points">Access Points</string>
-    <string name="action_channel_rating">Channel Rating</string>
+    <string name="action_access_points">Punkty dostępowe</string>
+    <string name="action_channel_rating">Podsumowanie kanałów</string>
     <string name="action_channel_graph">Channel Graph</string>
     <string name="action_time_graph">Time Graph</string>
     <string name="action_export">Export</string>
@@ -59,7 +59,7 @@
     <string name="channel_rating_best_alternative">, try alternative WiFi Band</string>
     <string name="channel_rating_heading_rating">Ocena kanału:</string>
     <string name="channel_rating_heading_number">Numer kanału:</string>
-    <string name="channel_rating_heading_count">Ilość nadajników:</string>
+    <string name="channel_rating_heading_count">Ilość pkt. dostępowych:</string>
     <string name="channel_short_name">Kanał:</string>
 
     <string name="graph_channel_axis_x">WiFi Channels</string>
