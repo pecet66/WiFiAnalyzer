@@ -18,16 +18,19 @@
   -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="horizontal">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
 
     <!-- Column 1 -->
     <TextView
+        tools:text="text"
         android:id="@+id/tab"
         android:layout_width="@dimen/list_view_item_horizontal_tab"
         android:layout_height="wrap_content"
-        android:visibility="gone"/>
+        android:visibility="gone"
+        tools:visibility="visible"/>
 
     <!-- Column 2 -->
     <LinearLayout
@@ -46,7 +49,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@null"
-                android:visibility="gone"/>
+                android:visibility="gone"
+                tools:visibility="visible"/>
 
             <ImageView
                 android:id="@+id/configuredImage"
@@ -56,9 +60,11 @@
                 android:layout_marginRight="@dimen/list_view_item_horizontal_spacer"
                 android:contentDescription="@null"
                 android:src="@drawable/ic_tag_faces_black_18dp"
-                android:visibility="gone"/>
+                android:visibility="gone"
+                tools:visibility="visible"/>
 
             <TextView
+                tools:text="text"
                 android:id="@+id/ssid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -80,6 +86,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    tools:text="text"
                     android:id="@+id/level"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
@@ -106,6 +113,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        tools:text="text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="@dimen/list_view_item_horizontal_spacer"
@@ -115,6 +123,7 @@
                         android:textStyle="bold"/>
 
                     <TextView
+                        tools:text="text"
                         android:id="@+id/channel"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -124,6 +133,7 @@
                         android:textStyle="bold"/>
 
                     <TextView
+                        tools:text="text"
                         android:id="@+id/primaryFrequency"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -132,6 +142,7 @@
                         android:textColor="@color/frequency"/>
 
                     <TextView
+                        tools:text="text"
                         android:id="@+id/distance"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -146,6 +157,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        tools:text="text"
                         android:id="@+id/channel_frequency_range"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -154,6 +166,7 @@
                         android:textColor="@color/frequency"/>
 
                     <TextView
+                        tools:text="text"
                         android:id="@+id/width"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -162,10 +175,12 @@
                         android:textColor="@color/frequency"/>
 
                     <TextView
+                        tools:text="text"
                         android:id="@+id/vendorShort"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:visibility="gone"/>
+                        android:visibility="gone"
+                        tools:visibility="visible"/>
                 </LinearLayout>
 
                 <!-- Row 3 -->
@@ -183,6 +198,7 @@
                         android:contentDescription="@null"/>
 
                     <TextView
+                        tools:text="text"
                         android:id="@+id/capabilities"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
