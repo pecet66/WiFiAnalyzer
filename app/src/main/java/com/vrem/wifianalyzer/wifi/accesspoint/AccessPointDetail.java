@@ -82,9 +82,9 @@ public class AccessPointDetail {
         Strength strength = wiFiSignal.getStrength();
 
         Security security = wiFiDetail.getSecurity();
-        ImageView securityImage = view.findViewById(R.id.securityImage);
-        securityImage.setImageResource(security.getImageResource());
-        securityImage.setColorFilter(ContextCompat.getColor(context, R.color.icons_color));
+        //ImageView securityImage = view.findViewById(R.id.securityImage);
+        //securityImage.setImageResource(security.getImageResource());
+        //securityImage.setColorFilter(ContextCompat.getColor(context, R.color.icons_color));
 
         TextView textLevel = view.findViewById(R.id.level);
         textLevel.setText(String.format(Locale.ENGLISH, "%ddBm", wiFiSignal.getLevel()));
