@@ -44,7 +44,7 @@ class WiFiSwitchOn implements NavigationOption {
             String wiFiBand5 = resources.getString(WiFiBand.GHZ5.getTextResource());
             WiFiBand wiFiBand = MainContext.INSTANCE.getSettings().getWiFiBand();
             String subtitle = makeSubtitle(WiFiBand.GHZ2.equals(wiFiBand), wiFiBand2, wiFiBand5, colorSelected, colorNotSelected);
-            actionBar.setSubtitle(TextUtils.fromHtml(subtitle));
+            //actionBar.setSubtitle(TextUtils.fromHtml(subtitle));
         }
     }
 
