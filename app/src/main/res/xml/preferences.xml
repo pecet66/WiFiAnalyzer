@@ -1,23 +1,10 @@
+
 <!--
-  ~ WiFiAnalyzer
-  ~ Copyright (C) 2017  VREM Software Development <VREMSoftwareDevelopment@gmail.com>
-  ~
-  ~ This program is free software: you can redistribute it and/or modify
-  ~ it under the terms of the GNU General Public License as published by
-  ~ the Free Software Foundation, either version 3 of the License, or
-  ~ (at your option) any later version.
-  ~
-  ~ This program is distributed in the hope that it will be useful,
-  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~ GNU General Public License for more details.
-  ~
-  ~ You should have received a copy of the GNU General Public License
-  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>
+  ~ Copyright (c) ISK Pawel Czarnik Kamil Drag 2017
   -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.vrem.wifianalyzer.settings.ScanIntervalPreference
+    <com.isk.wifi.settings.ScanIntervalPreference
         android:defaultValue="@integer/scan_interval_default"
         android:key="@string/scan_interval_key"
         android:persistent="true"
@@ -101,19 +88,19 @@
         android:key="@string/wifi_off_on_exit_key"
         android:title="@string/wifi_off_on_exit_title"/>
 
-    <com.vrem.wifianalyzer.settings.StartMenuPreference
+    <com.isk.wifi.settings.StartMenuPreference
         android:key="@string/start_menu_key"
         android:persistent="true"
         android:summary="@string/start_menu_summary"
         android:title="@string/start_menu_title"/>
 
-    <com.vrem.wifianalyzer.settings.CountryPreference
+    <com.isk.wifi.settings.CountryPreference
         android:key="@string/country_code_key"
         android:persistent="true"
         android:summary="@string/country_code_summary"
         android:title="@string/country_code_title"/>
 
-    <com.vrem.wifianalyzer.settings.LanguagePreference
+    <com.isk.wifi.settings.LanguagePreference
         android:key="@string/language_key"
         android:persistent="true"
         android:summary="@string/language_summary"
